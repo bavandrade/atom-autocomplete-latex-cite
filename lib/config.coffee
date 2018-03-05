@@ -27,9 +27,9 @@ module.exports =
     type: 'string'
     order: 2
     default: getTexmfBibtexPath()
-    description: 'The path of for global bibtex libary files. Defaults to the texmf folder.'
+    description: 'The path of for global BibTeX library files. Defaults to the texmf folder.'
   includeGlobalBibFiles:
     type: 'boolean'
     order: 1
     default: false
-    description: 'Add the bibtex entries in the global files to the suggestions list.'
+    description: 'Add the BibTeX entries in the global files to the suggestions list.'

@@ -29,7 +29,7 @@ describe "When the CiteManger gets initialized", ->
     result  = manager.searchForPrefixInDatabase('Studies on provision')
     expect(result[0].id).toEqual('7856203')
 
-  describe "When a secound bibtex file is added", ->
+  describe "When a secound BibTeX file is added", ->
     bibFile2 = path.join(__dirname,'lib2.bib')
 
     beforeEach ->
@@ -58,7 +58,7 @@ describe "When the CiteManger gets initialized", ->
       manager.removeBibtexFile(bibFile2)
       expect(Object.keys(manager.database).length).toEqual(4)
 
-  describe "When the bibtex file is not valid", ->
+  describe "When the BibTeX file is not valid", ->
     bibFile2 = path.join(__dirname,'lib2.bib')
 
     beforeEach ->
@@ -80,7 +80,7 @@ describe "When the CiteManger gets initialized", ->
     it "show a warning", ->
       noti = atom.notifications.getNotifications()
       expect(noti.length).toEqual 1
-      expect(noti[0].message).toEqual "Autocomplete Latex Cite Warning"
+      expect(noti[0].message).toEqual "Autocomplete LaTeX Cite Warning"
       expect(noti[0].type).toEqual "warning"
       expect(noti[0].options.description).toContain "lib2.bib"
       expect(noti[0].options.description).toContain "Token mismatch: match"

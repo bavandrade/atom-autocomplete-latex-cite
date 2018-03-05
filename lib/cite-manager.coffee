@@ -151,10 +151,10 @@ class CiteManager
         @fuse = new Fuse(Object.values(@database),fuseOptions)
         resolve(@database)
       ).catch( (error) ->
-        message = "Autocomplete Latex Cite Warning"
+        message = "Autocomplete LaTeX Cite Warning"
         options = {
           'dismissable': true
-          'description': """Unable to parse Bibtex file #{file}. It will be
+          'description': """Unable to parse BibTeX file #{file}. It will be
           ignored for autocompletion. (`#{error.message}`)
           """
         }

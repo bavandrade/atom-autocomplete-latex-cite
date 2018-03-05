@@ -1,6 +1,6 @@
 path = require 'path'
 
-describe "Latex Cite Autocompletions", ->
+describe "LaTeX Cite Autocompletions", ->
   [editor, provider] = []
   bibFile = path.join(__dirname,'lib.bib')
 
